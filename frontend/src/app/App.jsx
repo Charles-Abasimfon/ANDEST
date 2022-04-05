@@ -14,30 +14,120 @@ import CaseStudy from '../pages/case-study';
 import CaseStudyDetails from '../pages/case-study/case-study-details';
 import Contact from '../pages/contact';
 import Error from '../pages/404';
-import LoadTop from '../components/ScrollTop/LoadTop';
+import AutoScrollToTop from '../components/ScrollTop/AutoScrollToTop';
 
 const App = () => {
   return (
     <div className='App'>
-      <LoadTop />
       <Router>
         <Routes>
-          <Route path='/' exact element={<Home />} />
-          <Route path='/home' element={<Home />} />
-          <Route path='/home-2' element={<HomeTwo />} />
-          <Route path='/home-3' element={<HomeThree />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/blog' exact element={<Blog />} />
-          <Route path='/blog/blog-details' element={<BlogDetails />} />
-          <Route path='/service' exact element={<Service />} />
-          <Route path='/service/service-details' element={<ServiceDetails />} />
-          <Route path='/case-study' exact element={<CaseStudy />} />
+          <Route
+            path='/'
+            exact
+            element={
+              <AutoScrollToTop>
+                <Home />
+              </AutoScrollToTop>
+            }
+          />
+          <Route
+            path='/home'
+            element={
+              <AutoScrollToTop>
+                <Home />
+              </AutoScrollToTop>
+            }
+          />
+          <Route
+            path='/home-2'
+            element={
+              <AutoScrollToTop>
+                <HomeTwo />
+              </AutoScrollToTop>
+            }
+          />
+          <Route
+            path='/home-3'
+            element={
+              <AutoScrollToTop>
+                <HomeThree />
+              </AutoScrollToTop>
+            }
+          />
+          <Route
+            path='/about'
+            element={
+              <AutoScrollToTop>
+                <About />
+              </AutoScrollToTop>
+            }
+          />
+          <Route
+            path='/blog'
+            exact
+            element={
+              <AutoScrollToTop>
+                <Blog />
+              </AutoScrollToTop>
+            }
+          />
+          <Route
+            path='/blog/blog-details'
+            element={
+              <AutoScrollToTop>
+                <BlogDetails />
+              </AutoScrollToTop>
+            }
+          />
+          <Route
+            path='/services'
+            exact
+            element={
+              <AutoScrollToTop>
+                <Service />
+              </AutoScrollToTop>
+            }
+          />
+          <Route
+            path='/service/service-details'
+            element={
+              <AutoScrollToTop>
+                <ServiceDetails />
+              </AutoScrollToTop>
+            }
+          />
+          <Route
+            path='/case-study'
+            exact
+            element={
+              <AutoScrollToTop>
+                <CaseStudy />
+              </AutoScrollToTop>
+            }
+          />
           <Route
             path='/case-study/case-study-details'
-            element={<CaseStudyDetails />}
+            element={
+              <AutoScrollToTop>
+                <CaseStudyDetails />
+              </AutoScrollToTop>
+            }
           />
-          <Route path='/contact' element={<Contact />} />
-          <Route element={<Error />} />
+          <Route
+            path='/contact'
+            element={
+              <AutoScrollToTop>
+                <Contact />
+              </AutoScrollToTop>
+            }
+          />
+          <Route
+            element={
+              <AutoScrollToTop>
+                <Error />
+              </AutoScrollToTop>
+            }
+          />
         </Routes>
       </Router>
     </div>

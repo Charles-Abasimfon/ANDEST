@@ -11,58 +11,53 @@ import Testimonial from './TestimonialSection';
 import ScrollToTop from '../../components/ScrollTop';
 
 class HomeMain extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <div className='ras-main-content'>
+          {/* SliderSection-start */}
+          <HomeSlider />
+          {/* SliderSection-start */}
 
-	render() {
+          {/* Video-area-start */}
+          <VideoSection />
+          {/* Video-area-end */}
 
-		return (
-			<React.Fragment>
-				<div className="ras-main-content">
-					{/* SliderSection-start */}
-					<HomeSlider />
-					{/* SliderSection-start */}
+          {/* WhyChooseUs-area-start */}
+          <WhyChooseUs />
+          {/* WhyChooseUs-area-end */}
 
-					{/* Video-area-start */}
-					<VideoSection />
-					{/* Video-area-end */}
+          {/* Service-area-start */}
+          {/*  <Service /> */}
+          {/* Service-area-end */}
 
-					{/* Service-area-start */}
-					<Service />
-					{/* Service-area-end */}
+          {/* Feature-area-start */}
+          {/* <Feature /> */}
+          {/* Feature-area-end */}
 
-					{/* Feature-area-start */}
-					<Feature />
-					{/* Feature-area-end */}
+          {/* CaseStudy-area-start */}
+          {/* <CaseStudy /> */}
+          {/* CaseStudy-area-end */}
 
-					{/* CaseStudy-area-start */}
-					<CaseStudy />
-					{/* CaseStudy-area-end */}
+          {/* testmonial-area-start */}
+          {/*  <Testimonial /> */}
+          {/* testmonial-area-end */}
 
-					{/* WhyChooseUs-area-start */}
-					<WhyChooseUs />
-					{/* WhyChooseUs-area-end */}
+          {/* Newsletter-area-start */}
+          {/* <Newsletter /> */}
+          {/* Newsletter-area-end */}
 
-					{/* testmonial-area-start */}
-					<Testimonial />
-					{/* testmonial-area-end */}
+          {/* blog-area-start */}
+          {/* <Blog /> */}
+          {/* blog-area-end */}
 
-					{/* Newsletter-area-start */}
-					<Newsletter />
-					{/* Newsletter-area-end */}
-
-					{/* blog-area-start */}
-					<Blog />
-					{/* blog-area-end */}
-
-					{/* scrolltop-start */}
-					<ScrollToTop
-						scrollClassName="scrollup orange-color"
-					/>
-					{/* scrolltop-end */}
-				</div>
-
-			</React.Fragment>
-		);
-	}
+          {/* scrolltop-start */}
+          <ScrollToTop />
+          {/* scrolltop-end */}
+        </div>
+      </React.Fragment>
+    );
+  }
 }
 
 export default HomeMain;

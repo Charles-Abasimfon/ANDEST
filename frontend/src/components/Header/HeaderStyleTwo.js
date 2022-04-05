@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import normalLogo from '../../assets/images/logos/logo.svg';
-import stickyLogo from '../../assets/images/logos/logo-colored.svg';
+import normalLogo from '../../assets/images/logos/logo-white.png';
+import stickyLogo from '../../assets/images/logos/logo-colored.png';
 
 const HeaderStyleTwo = (props) => {
   const {
@@ -80,43 +80,19 @@ const HeaderStyleTwo = (props) => {
                   <ul className={menuOpen ? 'nav-menu menu-open' : 'nav-menu'}>
                     <li
                       className={
-                        parentMenu === 'home'
-                          ? 'menu-item-has-children active'
-                          : 'menu-item-has-children'
+                        location.pathname === '/' || location.pathname === '/'
+                          ? 'active'
+                          : ''
                       }
-                      onClick={() => {
-                        openMobileMenu('home');
-                      }}
                     >
                       <Link to='/'>Home</Link>
-                      <ul
-                        className={home ? 'sub-menu sub-menu-open' : 'sub-menu'}
-                      >
-                        <li
-                          className={location.pathname === '/' ? 'active' : ''}
-                        >
-                          <Link to='/'>Home Variation 1</Link>
-                        </li>
-                        <li
-                          className={
-                            location.pathname === '/home-2' ? 'active' : ''
-                          }
-                        >
-                          <Link to='/home-2'>Home Variation 2</Link>
-                        </li>
-                        <li
-                          className={
-                            location.pathname === '/home-3' ? 'active' : ''
-                          }
-                        >
-                          <Link to='/home-3'>Home Variation 3</Link>
-                        </li>
-                      </ul>
                     </li>
                     <li
-                      className={location.pathname === '/about' ? 'active' : ''}
+                      className={
+                        location.pathname === '/applications' ? 'active' : ''
+                      }
                     >
-                      <Link to='/about'>About</Link>
+                      <Link to='/applications'>Applications</Link>
                     </li>
                     <li
                       className={
@@ -128,7 +104,7 @@ const HeaderStyleTwo = (props) => {
                         openMobileMenu('pages');
                       }}
                     >
-                      <Link to='#'>Pages</Link>
+                      <Link to='#'>Company</Link>
                       <ul
                         className={
                           pages ? 'sub-menu sub-menu-open' : 'sub-menu'
@@ -136,19 +112,32 @@ const HeaderStyleTwo = (props) => {
                       >
                         <li
                           className={
-                            location.pathname === '/blog' ? 'active' : ''
+                            location.pathname === '/about' ? 'active' : ''
                           }
                         >
-                          <Link to='/blog'>Blog</Link>
+                          <Link to='/about'>About us</Link>
                         </li>
                         <li
                           className={
-                            location.pathname === '/blog/blog-details'
+                            location.pathname === '/applications'
                               ? 'active'
                               : ''
                           }
                         >
-                          <Link to='/blog/blog-details'>Blog Details</Link>
+                          <Link to='/services'>
+                            Skilled Nursing and Long-term Care Services
+                          </Link>
+                        </li>
+                        <li
+                          className={
+                            location.pathname === '/healthcare-facilities'
+                              ? 'active'
+                              : ''
+                          }
+                        >
+                          <Link to='/healthcare-facilities'>
+                            Healthcare Facilities
+                          </Link>
                         </li>
                         <li
                           className={
@@ -169,41 +158,31 @@ const HeaderStyleTwo = (props) => {
                             Case Study Details
                           </Link>
                         </li>
-                        <li
-                          className={
-                            location.pathname === '/service' ? 'active' : ''
-                          }
-                        >
-                          <Link to='/service'>Services</Link>
-                        </li>
-                        <li
-                          className={
-                            location.pathname === '/contact' ? 'active' : ''
-                          }
-                        >
-                          <Link to='/contact'>Contact</Link>
-                        </li>
                       </ul>
+                    </li>
+                    <li
+                      className={location.pathname === '/snsa' ? 'active' : ''}
+                    >
+                      <Link to='/snsa'>SNSA</Link>
                     </li>
                     <li
                       className={location.pathname === '/blog' ? 'active' : ''}
                     >
-                      <Link to='/blog'>Blog</Link>
+                      <Link to='/blog'>Blogs/Vlogs</Link>
                     </li>
                     <li
                       className={
                         location.pathname === '/contact' ? 'active' : ''
                       }
                     >
-                      <Link to='/contact'>Contact</Link>
+                      <Link to='/contact'>Contact us</Link>
                     </li>
-                    <li>
-                      <a href='tel:+1 998 150 3022'>
-                        <i className='icofont-iphone'></i> +00 123 6789
-                      </a>
-                    </li>
-                    <li>
-                      <Link to='/contact'>Get Started</Link>
+                    <li
+                      className={
+                        location.pathname === '/portal' ? 'active' : ''
+                      }
+                    >
+                      <Link to='/portal'>Employee Portal</Link>
                     </li>
                   </ul>
                   <button

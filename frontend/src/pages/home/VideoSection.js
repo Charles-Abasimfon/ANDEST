@@ -1,33 +1,21 @@
-import React, { useState } from 'react';
-import ModalVideo from 'react-modal-video';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import videoIcon from '../../assets/images/video/video-img.jpg';
+import andestVideo from '../../assets/images/video/andestvideo.mp4';
 
 const VideoSection = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const openModal = () => setIsOpen(!isOpen);
-
   return (
     <div className='ras-video'>
       <h2 className='sr-only'>Video</h2>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-12'>
-            <Fade bottom>
-              <div className='ras-video-container'>
-                <img src={videoIcon} alt='Banner Video' />
-                <a
-                  className='ras-vid-icon ras-video-lightbox vbox-item more'
-                  href='#'
-                  onClick={() => {
-                    openModal();
-                  }}
-                >
-                  <i className='icofont-ui-play'></i>
-                </a>
-              </div>
-            </Fade>
+            <div className='ras-video-container'>
+              <video width='900' height='auto' autoPlay muted loop>
+                <source src={`${andestVideo}`} type='video/mp4' />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </div>
