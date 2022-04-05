@@ -839,7 +839,7 @@
   }
 
   .ras-why-choose-us-1 {
-    padding: 55px 0 20px;
+    padding: 55px 0 100px;
   }
 
   .ras-why-choose-us-1 .choose-us-items {
@@ -1603,8 +1603,14 @@
   }
 
   .ras-footer-1 .ras-calltoaction {
-    display: none;
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ras-footer-1 .ras-calltoaction h2 {
+    margin-bottom: 20px;
   }
 
   .ras-footer-1 .square-dots-1 {

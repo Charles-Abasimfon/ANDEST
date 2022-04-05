@@ -95,7 +95,10 @@ const Footer = (props) => {
                 <span>Fri: 9:00 AM – 5:00 PM</span>
               </li>
               <li>
-                <span>Sat: Closed Sun: Closed</span>
+                <span>Sat: Closed</span>
+              </li>
+              <li>
+                <span>Sun: Closed</span>
               </li>
             </ul>
           </div>
@@ -111,18 +114,13 @@ const Footer = (props) => {
                   </Link>
                 </li>
                 <li>
-                  <Link to='#'>
-                    <i className='icofont-twitter'></i>
-                  </Link>
+                  <a href='https://instagram.com/andest_llc?utm_medium=copy_link'>
+                    <i className='icofont-instagram'></i>
+                  </a>
                 </li>
                 <li>
                   <Link to='#'>
-                    <i className='icofont-youtube'></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link to='#'>
-                    <i className='icofont-dribbble'></i>
+                    <i className='icofont-whatsapp'></i>
                   </Link>
                 </li>
               </ul>
