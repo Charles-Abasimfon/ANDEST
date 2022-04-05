@@ -1,0 +1,85 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./Flaticon.ttf?7b98879c939e88c4186ed4145f417cfb") format("truetype"),
+url("./Flaticon.woff?7b98879c939e88c4186ed4145f417cfb") format("woff"),
+url("./Flaticon.woff2?7b98879c939e88c4186ed4145f417cfb") format("woff2"),
+url("./Flaticon.eot?7b98879c939e88c4186ed4145f417cfb#iefix") format("embedded-opentype"),
+url("./Flaticon.svg?7b98879c939e88c4186ed4145f417cfb#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "email": "\f101",
+    "start-up": "\f102",
+    "customer-service": "\f103",
+    "vector": "\f104",
+    "web-programming": "\f105",
+    "digital-marketing": "\f106",
+    "man": "\f107",
+    "checked": "\f108",
+    "chat": "\f109",
+    "feedback": "\f10a",
+    "user": "\f10b",
+    "quotation": "\f10c",
+    "smiling-girl": "\f10d",
+    "strategy": "\f10e",
+    "operator": "\f10f",
+);
+
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-start-up:before {
+    content: map-get($flaticon-map, "start-up");
+}
+.flaticon-customer-service:before {
+    content: map-get($flaticon-map, "customer-service");
+}
+.flaticon-vector:before {
+    content: map-get($flaticon-map, "vector");
+}
+.flaticon-web-programming:before {
+    content: map-get($flaticon-map, "web-programming");
+}
+.flaticon-digital-marketing:before {
+    content: map-get($flaticon-map, "digital-marketing");
+}
+.flaticon-man:before {
+    content: map-get($flaticon-map, "man");
+}
+.flaticon-checked:before {
+    content: map-get($flaticon-map, "checked");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon-map, "chat");
+}
+.flaticon-feedback:before {
+    content: map-get($flaticon-map, "feedback");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-quotation:before {
+    content: map-get($flaticon-map, "quotation");
+}
+.flaticon-smiling-girl:before {
+    content: map-get($flaticon-map, "smiling-girl");
+}
+.flaticon-strategy:before {
+    content: map-get($flaticon-map, "strategy");
+}
+.flaticon-operator:before {
+    content: map-get($flaticon-map, "operator");
+}

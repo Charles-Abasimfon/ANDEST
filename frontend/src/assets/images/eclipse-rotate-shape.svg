@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 572 572" width="572" height="572">
+	<title>Ellipse 60 copy 4</title>
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="539.976" y1="539.975" x2="32.024" y2="32.024">
+			<stop offset="0" stop-color="#ffffff"  />
+			<stop offset="1" stop-color="#f14e5e"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.102;fill: url(#grd1) } 
+	</style>
+	<path id="Ellipse 60 copy 4" class="shp0" d="M450.16 92.18C557.21 182.84 570.49 343.12 479.82 450.16C389.16 557.21 228.88 570.49 121.84 479.82C14.79 389.16 1.51 228.88 92.18 121.84C182.84 14.79 343.12 1.51 450.16 92.18Z" />
+</svg>
