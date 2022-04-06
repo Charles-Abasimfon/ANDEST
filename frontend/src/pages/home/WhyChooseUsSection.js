@@ -16,8 +16,6 @@ const WhyChooseUs = () => {
       <div className='container'>
         <Fade bottom>
           <h2 className='text-center mb-50'>Working with Andest:</h2>
-        </Fade>
-        <Fade bottom cascade>
           <div className='row justify-content-center'>
             <div className='col-lg-6 col-md-12'>
               <div className='choose-us-items'>

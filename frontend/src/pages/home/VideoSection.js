@@ -11,10 +11,19 @@ const VideoSection = () => {
         <div className='row'>
           <div className='col-lg-12'>
             <div className='ras-video-container'>
-              <video width='900' height='auto' autoPlay muted loop>
-                <source src={`${andestVideo}`} type='video/mp4' />
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `<video
+                loop
+                muted
+                autoplay
+                playsinline
+                >
+                <source src="${andestVideo}" type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+                </video>`,
+                }}
+              />
             </div>
           </div>
         </div>
