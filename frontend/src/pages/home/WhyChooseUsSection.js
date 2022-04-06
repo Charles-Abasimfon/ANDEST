@@ -4,7 +4,6 @@ import { FaUserMd } from 'react-icons/fa';
 import { AiOutlineFileSync } from 'react-icons/ai';
 import { HiOutlineUsers } from 'react-icons/hi';
 import { RiUserSmileLine } from 'react-icons/ri';
-import Fade from 'react-reveal/Fade';
 
 // WhyChooseUs Image
 import shapeImg from '../../assets/images/eclipse-rotate-shape.svg';
@@ -14,9 +13,7 @@ const WhyChooseUs = () => {
     <div className='ras-why-choose-us ras-why-choose-us-1'>
       <img src={shapeImg} alt='eclipse-shape' />
       <div className='container'>
-        <Fade bottom>
-          <h2 className='text-center mb-50'>Working with Andest:</h2>
-        </Fade>
+        <h1 className='text-center mb-50'>Working with Andest:</h1>
         <div className='row justify-content-center'>
           <div className='col-lg-6 col-md-12'>
             <div className='choose-us-items'>

@@ -58,21 +58,10 @@ const HeaderStyleTwo = (props) => {
             <div className='row align-items-center'>
               <div className='col-lg-2'>
                 <div className='logo'>
-                  {isVisible ? (
-                    <Link to='/'>
-                      <img
-                        src={headerStickyLogo ? headerStickyLogo : stickyLogo}
-                        alt=''
-                      />
-                    </Link>
-                  ) : (
-                    <Link to='/'>
-                      <img
-                        src={headerNormalLogo ? headerNormalLogo : normalLogo}
-                        alt=''
-                      />
-                    </Link>
-                  )}
+                  <img
+                    src={require('../../assets/images/logos/logo-colored.png')}
+                    alt='Andest LLC Logo'
+                  />
                 </div>
               </div>
               <div className='col-lg-10 relative'>
