@@ -631,7 +631,13 @@ input:-webkit-autofill {
 -------------------------------------*/
 
 .ras-header .logo {
-  max-width: 98px;
+  max-width: 80px;
+}
+
+@media screen and (max-width: 991px) {
+  .ras-header .logo {
+    max-width: 60px;
+  }
 }
 
 /**

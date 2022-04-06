@@ -6,8 +6,6 @@ import Footer from '../../components/Footer';
 import footerLogo from '../../assets/images/logos/logo-white.png';
 
 class HomePage extends React.Component {
-  componentDidMount() {}
-
   render() {
     return (
       <React.Fragment>
