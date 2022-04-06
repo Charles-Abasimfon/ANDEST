@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Fade from 'react-reveal/Fade';
 import Logo from '../../assets/images/logos/logo-white.png';
 
 const Footer = (props) => {
@@ -9,18 +9,20 @@ const Footer = (props) => {
     <footer className={footerClass ? footerClass : 'ras-footer ras-footer-1'}>
       <div className='container'>
         {footerCTA ? (
-          <div className='row'>
-            <div className='col-lg-12'>
-              <div className='ras-calltoaction'>
-                <h2>
-                  We would love to hear from you. <br /> <b>Get in touch</b>
-                </h2>
-                <Link to='/contact' className='btn btn-primary btn-large'>
-                  Contact Us
-                </Link>
+          <Fade bottom cascade>
+            <div className='row'>
+              <div className='col-lg-12'>
+                <div className='ras-calltoaction'>
+                  <h2>
+                    We would love to hear from you. <br /> <b>Get in touch</b>
+                  </h2>
+                  <Link to='#' className='btn btn-primary btn-large'>
+                    Contact Us
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+          </Fade>
         ) : (
           ''
         )}
@@ -52,27 +54,25 @@ const Footer = (props) => {
             <h3 className='ras-widget-title'>Quick Links</h3>
             <ul>
               <li>
-                <Link to='/about'>About us</Link>
+                <Link to='#'>About us</Link>
               </li>
               <li>
-                <Link to='/applications'>Applications</Link>
+                <Link to='#'>Applications</Link>
               </li>
               <li>
-                <Link to='/services'>
-                  Skilled Nursing and Long-term Care Services
-                </Link>
+                <Link to='#'>Skilled Nursing and Long-term Care Services</Link>
               </li>
               <li>
-                <Link to='/healthcare-facilities'>Healthcare Facilities</Link>
+                <Link to='#'>Healthcare Facilities</Link>
               </li>
               <li>
-                <Link to='/snsa'>SNSA</Link>
+                <Link to='#'>SNSA</Link>
               </li>
               <li>
-                <Link to='/blog'>Our Blogs/ Vlogs</Link>
+                <Link to='#'>Our Blogs/ Vlogs</Link>
               </li>
               <li>
-                <Link to='/contact'>Contact us</Link>
+                <Link to='#'>Contact us</Link>
               </li>
             </ul>
           </div>
@@ -109,9 +109,9 @@ const Footer = (props) => {
             <div className='col-md-6 text-lg-center'>
               <ul className='ras-social-profile'>
                 <li>
-                  <Link to='#'>
+                  <a href='https://www.facebook.com/andestllc/'>
                     <i className='icofont-facebook'></i>
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <a href='https://instagram.com/andest_llc?utm_medium=copy_link'>
@@ -119,9 +119,9 @@ const Footer = (props) => {
                   </a>
                 </li>
                 <li>
-                  <Link to='#'>
+                  <a href='https://api.whatsapp.com/send?phone=612-438-7514'>
                     <i className='icofont-whatsapp'></i>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

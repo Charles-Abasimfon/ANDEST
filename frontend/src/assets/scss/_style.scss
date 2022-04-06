@@ -27,11 +27,11 @@
 --------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
 :root {
   /* Color */
   --body-color: #000;
-  --title-color: #222;
+  --title-color: #013298;
   --primary-color: #013298;
   --primary-ligt-color: #36c1ea;
   --secondary-color: #e6c2b4;
@@ -41,7 +41,7 @@
 
   /* Typography */
   --body-font: 'Outfit', sans-serif;
-  --title-font: 'Outfit', sans-serif;
+  --title-font: 'Kaisei Tokumin', sans-serif;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;

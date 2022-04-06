@@ -92,7 +92,7 @@ const HeaderStyleTwo = (props) => {
                         location.pathname === '/applications' ? 'active' : ''
                       }
                     >
-                      <Link to='/applications'>Applications</Link>
+                      <Link to='/blocked'>Applications</Link>
                     </li>
                     <li
                       className={
@@ -115,7 +115,7 @@ const HeaderStyleTwo = (props) => {
                             location.pathname === '/about' ? 'active' : ''
                           }
                         >
-                          <Link to='/about'>About us</Link>
+                          <Link to='/blocked'>About us</Link>
                         </li>
                         <li
                           className={
@@ -124,7 +124,7 @@ const HeaderStyleTwo = (props) => {
                               : ''
                           }
                         >
-                          <Link to='/services'>
+                          <Link to='/blocked'>
                             Skilled Nursing and Long-term Care Services
                           </Link>
                         </li>
@@ -135,11 +135,9 @@ const HeaderStyleTwo = (props) => {
                               : ''
                           }
                         >
-                          <Link to='/healthcare-facilities'>
-                            Healthcare Facilities
-                          </Link>
+                          <Link to='/blocked'>Healthcare Facilities</Link>
                         </li>
-                        <li
+                        {/*       <li
                           className={
                             location.pathname === '/case-study' ? 'active' : ''
                           }
@@ -157,32 +155,32 @@ const HeaderStyleTwo = (props) => {
                           <Link to='/case-study/case-study-details'>
                             Case Study Details
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </li>
                     <li
                       className={location.pathname === '/snsa' ? 'active' : ''}
                     >
-                      <Link to='/snsa'>SNSA</Link>
+                      <Link to='/blocked'>SNSA</Link>
                     </li>
                     <li
                       className={location.pathname === '/blog' ? 'active' : ''}
                     >
-                      <Link to='/blog'>Blogs/Vlogs</Link>
+                      <Link to='/blocked'>Blogs/Vlogs</Link>
                     </li>
                     <li
                       className={
                         location.pathname === '/contact' ? 'active' : ''
                       }
                     >
-                      <Link to='/contact'>Contact us</Link>
+                      <Link to='/blocked'>Contact us</Link>
                     </li>
                     <li
                       className={
                         location.pathname === '/portal' ? 'active' : ''
                       }
                     >
-                      <Link to='/portal'>Employee Portal</Link>
+                      <Link to='/blocked'>Employee Portal</Link>
                     </li>
                   </ul>
                   <button

@@ -45,10 +45,7 @@ const HomeSlider = () => {
                     your loved ones wherever they are, whenever they need it.
                   </h2>
                   <p className='ras-slide-desc text-white mb-50'></p>
-                  <Link
-                    to='/contact'
-                    className='btn btn-primary btn-large hero-btn'
-                  >
+                  <Link to='#' className='btn btn-primary btn-large hero-btn'>
                     Contact us
                     <i className='icofont-long-arrow-right'></i>
                   </Link>
