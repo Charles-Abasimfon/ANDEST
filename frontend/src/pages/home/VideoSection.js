@@ -18,6 +18,7 @@ const VideoSection = () => {
                 muted
                 autoplay
                 playsinline
+                style="max-width: 100vw;"
                 >
                 <source src="${andestVideo}" type="video/mp4" />
                 Your browser does not support the video tag.
