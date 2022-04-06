@@ -13,8 +13,9 @@ const Footer = (props) => {
             <div className='row'>
               <div className='col-lg-12'>
                 <div className='ras-calltoaction'>
+                  <h2>We would love to hear from you.</h2>
                   <h2>
-                    We would love to hear from you. <br /> <b>Get in touch</b>
+                    <b>Get in touch</b>
                   </h2>
                   <Link to='#' className='btn btn-primary btn-large'>
                     Contact Us
