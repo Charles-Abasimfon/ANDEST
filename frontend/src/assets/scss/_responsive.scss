@@ -312,17 +312,8 @@
   color: var(--primary-color);
 }
 
-#root
-  > div
-  > div.ras-header.ras-header-1
-  > div
-  > div
-  > div
-  > div.col-lg-10.relative
-  > nav
-  > button
-  > span {
-  background-color: var(--primary-color);
+.sticky .mobile-menu-icon span {
+  background-color: #013298 !important;
 }
 
 /* Large Layout: Min 992px. */

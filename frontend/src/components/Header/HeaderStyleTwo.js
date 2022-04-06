@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import normalLogo from '../../assets/images/logos/logo-white.png';
-import stickyLogo from '../../assets/images/logos/logo-colored.png';
+import normalLogo from '../../assets/images/logos/logowhite.webp';
+import stickyLogo from '../../assets/images/logos/logocolored.webp';
 
 const HeaderStyleTwo = (props) => {
   const {
@@ -58,10 +58,21 @@ const HeaderStyleTwo = (props) => {
             <div className='row align-items-center'>
               <div className='col-lg-2'>
                 <div className='logo'>
-                  <img
-                    src={require('../../assets/images/logos/logo-colored.png')}
-                    alt='Andest LLC Logo'
-                  />
+                  {isVisible ? (
+                    <Link to='/'>
+                      <img
+                        src={headerStickyLogo ? headerStickyLogo : stickyLogo}
+                        alt=''
+                      />
+                    </Link>
+                  ) : (
+                    <Link to='/'>
+                      <img
+                        src={headerNormalLogo ? headerNormalLogo : normalLogo}
+                        alt=''
+                      />
+                    </Link>
+                  )}
                 </div>
               </div>
               <div className='col-lg-10 relative'>
