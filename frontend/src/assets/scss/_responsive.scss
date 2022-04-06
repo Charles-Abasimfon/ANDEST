@@ -283,6 +283,48 @@
   }
 }
 
+.menu-bar.menu-sticky.sticky {
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+  z-index: 9999;
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  background: #fff;
+  z-index: 999;
+}
+.menu-bar.menu-sticky.sticky .ras-main-menu .nav-menu > li > a,
+.menu-bar.menu-sticky.sticky
+  .ras-main-menu
+  .nav-menu
+  li.menu-item-has-children::before {
+  color: var(--body-color);
+}
+.menu-bar.menu-sticky.sticky .ras-main-menu .nav-menu > li > a:hover,
+.menu-bar.menu-sticky.sticky .ras-main-menu .nav-menu > li.active > a,
+.menu-bar.menu-sticky.sticky
+  .ras-main-menu
+  .nav-menu
+  li.menu-item-has-children.active::before {
+  color: var(--primary-color);
+}
+
+#root
+  > div
+  > div.ras-header.ras-header-1
+  > div
+  > div
+  > div
+  > div.col-lg-10.relative
+  > nav
+  > button
+  > span {
+  background-color: var(--primary-color);
+}
+
 /* Large Layout: Min 992px. */
 @media only screen and (min-width: 992px) {
   .menu-bar.menu-sticky.sticky {
