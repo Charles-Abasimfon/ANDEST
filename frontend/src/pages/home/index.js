@@ -8,7 +8,7 @@ import PageLoading from '../../components/Loader/PageLoading';
 function HomePage() {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
-    let timer = setTimeout(() => setLoaded(true), 2000);
+    let timer = setTimeout(() => setLoaded(true), 1000);
     return () => {
       clearTimeout(timer);
     };
