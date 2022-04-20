@@ -37,6 +37,14 @@
   font-family: 'League Spartan';
   src: local('League Spartan'),
     url('../fonts/League_Spartan/LeagueSpartan-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: local('League Spartan'),
+    url('../fonts/League_Spartan/LeagueSpartan-SemiBold.ttf') format('truetype');
+  font-weight: 700;
 }
 
 :root {
@@ -663,6 +671,8 @@ input:-webkit-autofill {
 
 .ras-header-1 .ras-main-menu .nav-menu > li > a {
   color: var(--body-color);
+  font-size: 16px;
+  letter-spacing: 0.7px;
 }
 
 .ras-header-1 .ras-main-menu .nav-menu > li > a:hover,
@@ -678,6 +688,7 @@ input:-webkit-autofill {
   position: absolute;
   z-index: 10;
   width: 100%;
+  background-color: #fff;
 }
 
 .ras-header-2 .ras-toolbar {
@@ -703,6 +714,7 @@ input:-webkit-autofill {
     .nav-menu
     li.menu-item-has-children.active::before {
     color: rgba(255, 255, 255, 0.8);
+    margin-top: -10px;
   }
 
   /*   .ras-header-1 .ras-main-menu .nav-menu > li:last-child > a {
@@ -2918,7 +2930,7 @@ input:-webkit-autofill {
   content: '';
   position: absolute;
   left: 0;
-  top: 52%;
+  top: 42%;
   width: 5px;
   height: 5px;
   border-radius: 50%;

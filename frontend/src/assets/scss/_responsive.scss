@@ -301,7 +301,7 @@
   .ras-main-menu
   .nav-menu
   li.menu-item-has-children::before {
-  color: var(--body-color);
+  color: var(--title-color);
 }
 .menu-bar.menu-sticky.sticky .ras-main-menu .nav-menu > li > a:hover,
 .menu-bar.menu-sticky.sticky .ras-main-menu .nav-menu > li.active > a,
@@ -309,7 +309,7 @@
   .ras-main-menu
   .nav-menu
   li.menu-item-has-children.active::before {
-  color: var(--primary-color);
+  color: var(--title-color);
 }
 
 .sticky .mobile-menu-icon span {
@@ -336,7 +336,7 @@
     .ras-main-menu
     .nav-menu
     li.menu-item-has-children::before {
-    color: var(--body-color);
+    color: var(--title-color);
   }
   .menu-bar.menu-sticky.sticky .ras-main-menu .nav-menu > li > a:hover,
   .menu-bar.menu-sticky.sticky .ras-main-menu .nav-menu > li.active > a,
@@ -344,7 +344,7 @@
     .ras-main-menu
     .nav-menu
     li.menu-item-has-children.active::before {
-    color: var(--primary-color);
+    color: var(--title-color);
   }
 
   .ras-main-menu {
@@ -410,7 +410,7 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
-    min-width: 390px;
+    min-width: 430px;
     margin-left: 0;
     transform: translateY(15px);
   }
@@ -427,7 +427,7 @@
     color: #fff;
     font-size: 18px;
     right: -5px;
-    top: 52%;
+    top: 50%;
     transform: translateY(-50%);
   }
 
@@ -459,7 +459,8 @@
     display: block;
     transition: all 0.3s ease-in-out;
     color: var(--body-color);
-    font-size: 94%;
+    font-size: 15px;
+    letter-spacing: 0.6px;
   }
 
   .ras-main-menu .nav-menu li ul.sub-menu li a:hover,
@@ -499,6 +500,8 @@
 
   .ras-header-2 .ras-main-menu .nav-menu > li > a {
     color: var(--title-color);
+    font-size: 15px;
+    letter-spacing: 0.6px;
   }
 
   /*   .ras-header-2-alt .ras-main-menu .nav-menu > li:last-child > a {
@@ -526,11 +529,11 @@
   }
 
   .ras-header-2 .ras-main-menu .nav-menu li.menu-item-has-children:before {
-    color: var(--body-color);
+    color: var(--title-color);
   }
 
   .ras-header-2 .ras-main-menu .nav-menu > li > a {
-    color: var(--body-color);
+    color: var(--title-color);
   }
 
   .ras-header-2 .ras-main-menu .nav-menu > li > a:hover,
@@ -1171,7 +1174,7 @@
 
   .ras-main-menu .sub-menu {
     margin-left: 0;
-    font-size: 16px;
+    font-size: 15px;
     display: none;
     padding-left: 12px;
   }
@@ -1181,6 +1184,8 @@
     padding: 10px 8px;
     margin: 0;
     display: none;
+    font-size: 15px;
+    letter-spacing: 0.7px;
   }
 
   /*   .ras-main-menu .sub-menu li:last-child {

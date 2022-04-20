@@ -85,14 +85,14 @@ const HeaderStyleTwo = (props) => {
                           : ''
                       }
                     >
-                      <Link to='/'>Home</Link>
+                      <Link to='/'>HOME</Link>
                     </li>
                     <li
                       className={
                         location.pathname === '/applications' ? 'active' : ''
                       }
                     >
-                      <Link to='/blocked'>Applications</Link>
+                      <Link to='/blocked'>APPLICATIONS</Link>
                     </li>
                     <li
                       className={
@@ -104,7 +104,7 @@ const HeaderStyleTwo = (props) => {
                         openMobileMenu('pages');
                       }}
                     >
-                      <Link to='#'>Company</Link>
+                      <Link to='#'>COMPANY</Link>
                       <ul
                         className={
                           pages ? 'sub-menu sub-menu-open' : 'sub-menu'
@@ -115,7 +115,7 @@ const HeaderStyleTwo = (props) => {
                             location.pathname === '/about' ? 'active' : ''
                           }
                         >
-                          <Link to='/about'>About us</Link>
+                          <Link to='/about'>ABOUT US</Link>
                         </li>
                         <li
                           className={
@@ -125,7 +125,7 @@ const HeaderStyleTwo = (props) => {
                           }
                         >
                           <Link to='/blocked'>
-                            Skilled Nursing and Long-term Care Services
+                            SKILLED NURSING AND LONG-TERM CARE SERVICES
                           </Link>
                         </li>
                         <li
@@ -135,7 +135,7 @@ const HeaderStyleTwo = (props) => {
                               : ''
                           }
                         >
-                          <Link to='/blocked'>Healthcare Facilities</Link>
+                          <Link to='/blocked'>HEALTHCARE FACILITIES</Link>
                         </li>
                         {/*       <li
                           className={
@@ -166,21 +166,21 @@ const HeaderStyleTwo = (props) => {
                     <li
                       className={location.pathname === '/blog' ? 'active' : ''}
                     >
-                      <Link to='/blocked'>Blogs/Vlogs</Link>
+                      <Link to='/blocked'>BLOGS/VLOGS</Link>
                     </li>
                     <li
                       className={
                         location.pathname === '/contact' ? 'active' : ''
                       }
                     >
-                      <Link to='/blocked'>Contact us</Link>
+                      <Link to='/blocked'>CONTACT US</Link>
                     </li>
                     <li
                       className={
                         location.pathname === '/portal' ? 'active' : ''
                       }
                     >
-                      <Link to='/blocked'>Employee Portal</Link>
+                      <Link to='/blocked'>EMPLOYEE PORTAL</Link>
                     </li>
                   </ul>
                   <button
