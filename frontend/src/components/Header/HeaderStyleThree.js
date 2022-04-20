@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import normalLogo from '../../assets/images/logos/logo-white.png';
-import stickyLogo from '../../assets/images/logos/logo-colored.png';
+import normalLogo from '../../assets/images/logos/logowhite.webp';
+import stickyLogo from '../../assets/images/logos/logocolored.webp';
 
 const HeaderStyleThree = (props) => {
   const {

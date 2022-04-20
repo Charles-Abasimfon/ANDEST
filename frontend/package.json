@@ -28,7 +28,8 @@
     "react-tabs": "^3.2.2",
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.26.9",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",

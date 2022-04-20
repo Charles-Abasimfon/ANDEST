@@ -27,7 +27,17 @@
 25. Page Loader
 --------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: local('Cormorant Garamond'),
+    url('../fonts/Cormorant/CormorantGaramond-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: local('League Spartan'),
+    url('../fonts/League_Spartan/LeagueSpartan-Regular.ttf') format('truetype');
+}
 
 :root {
   /* Color */
@@ -41,8 +51,8 @@
   --yellow-color: #fdbc0d;
 
   /* Typography */
-  --body-font: 'Outfit', sans-serif;
-  --title-font: 'Outfit', sans-serif;
+  --body-font: 'League Spartan', sans-serif;
+  --title-font: 'Cormorant Garamond', serif;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;
@@ -3077,7 +3087,7 @@ input:-webkit-autofill {
 -------------------------------------*/
 
 .ras-breadcrumb {
-  padding: 150px 0 95px;
+  padding: 120px 0 60px;
   background-color: rgba(77, 65, 225, 0.05);
 }
 

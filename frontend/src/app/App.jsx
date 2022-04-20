@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import WebFont from 'webfontloader';
 //Custom Components
 import Home from '../pages/home';
 import HomeTwo from '../pages/home-2';
@@ -16,6 +16,12 @@ import Contact from '../pages/contact';
 import Error from '../pages/404';
 import AutoScrollToTop from '../components/ScrollTop/AutoScrollToTop';
 import PageLoading from '../components/Loader/PageLoading';
+
+WebFont.load({
+  custom: {
+    families: ['Cormorant Garamond', 'League Spartan'],
+  },
+});
 
 const App = () => {
   const [loaded, setLoaded] = useState(false);

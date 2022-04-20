@@ -115,7 +115,7 @@ const HeaderStyleTwo = (props) => {
                             location.pathname === '/about' ? 'active' : ''
                           }
                         >
-                          <Link to='/blocked'>About us</Link>
+                          <Link to='/about'>About us</Link>
                         </li>
                         <li
                           className={
